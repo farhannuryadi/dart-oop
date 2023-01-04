@@ -21,6 +21,13 @@ class Person{ // class
 
 }
 
+// extension ini biasa digunakan untuk menambahkan method kedalam class library orang lain atau class yang ada
+extension SayGoodBye on Person{
+  void sayGoodBye(String paramName){
+    print("GoodBye $paramName, from $name");
+  }
+}
+
 void main(){
 
   var person1 = Person(); // object
@@ -37,6 +44,7 @@ void main(){
   person1.sayHello("Steven");
   person1.hello();
   print(person1.getName());
+  person1.sayGoodBye("Wakwaw");
 
   Person person2 = Person(); // object
   print(person2);
