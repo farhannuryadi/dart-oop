@@ -1,22 +1,18 @@
 class Rectangle{
 
-  int _width = 0;
-  int _length = 0;
+  int _width = 1;
+  int _length = 1;
 
-  int get width{
-    return _width;
-  }
+  int get width => _width;
 
   set width(int value){
-    _width = value;
+    if(value >= 1) _width = value;
   }
 
-  int get length{
-    return _length;
-  }
+  int get length => _length;
 
   set length(int value){
-    _length = value;
+    if(value >= 1) _length = value;
   }
 
 }
