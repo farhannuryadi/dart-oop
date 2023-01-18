@@ -12,7 +12,13 @@ class Car{
 
 }
 
-class Avanza implements Car{
+abstract class HasBrand{
+
+  String getBrand();
+
+}
+
+class Avanza implements Car, HasBrand{
 
   String name = "Avanza";
 
@@ -25,5 +31,7 @@ class Avanza implements Car{
   int getTier() {
     return 4;
   }
+
+  String getBrand() => "Toyota";
 
 }
